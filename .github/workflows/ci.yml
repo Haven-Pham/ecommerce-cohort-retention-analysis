@@ -1,0 +1,27 @@
+name: Reproducibility check
+
+# Proves the analysis still runs end to end: unit tests, a clean notebook
+# execution, and the report build. Runs on every push and pull request.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Unit tests
+        run: pytest -q
+      - name: Execute notebook from a clean kernel
+        run: python scripts/run_notebook.py --check
+      - name: Build Excel report and slide deck
+        run: python scripts/build_report.py

@@ -1,0 +1,9 @@
+,check,value,passed
+0,Order lines,51290,True
+1,Customers,17415,True
+2,Duplicate RowID,0,True
+3,Duplicate CustomerID in Customer,0,True
+4,Missing values in sales,0,True
+5,Sales customers without a profile,0,True
+6,Customers with more than one segment,0,True
+7,Order lines with negative profit,11041,True
