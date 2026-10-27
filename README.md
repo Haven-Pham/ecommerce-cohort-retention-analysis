@@ -4,7 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](requirements.txt)
 [![pandas](https://img.shields.io/badge/pandas-seaborn-150458?style=flat-square&logo=pandas&logoColor=white)](notebooks/cohort_retention_profitability.ipynb)
 [![Portfolio](https://img.shields.io/badge/Portfolio-haven--portfolio02-0EA5E9?style=flat-square&logo=vercel&logoColor=white)](https://haven-portfolio02.vercel.app/?scroll=projects)
-[![Tiếng Việt](https://img.shields.io/badge/Đọc-Tiếng%20Việt-DA251D?style=flat-square)](README.vi.md)
 
 > **TL;DR:** Sales grew **+24%** in 2023 but profit fell **−12%** because margins dropped from 18.0% to 12.8% across the whole catalogue. Repeat customers (31% of the base) earn **56% of profit**, yet the median wait for a second purchase is **364 days**, and discounts above 20% lost **$289K**. Five costed actions follow.
 
